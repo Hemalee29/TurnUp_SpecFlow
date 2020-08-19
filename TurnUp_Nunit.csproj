@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="FeatureFiles\**" />
+    <Compile Remove="Hooks\**" />
+    <Compile Remove="StepDefinations\**" />
+    <EmbeddedResource Remove="FeatureFiles\**" />
+    <EmbeddedResource Remove="Hooks\**" />
+    <EmbeddedResource Remove="StepDefinations\**" />
+    <None Remove="FeatureFiles\**" />
+    <None Remove="Hooks\**" />
+    <None Remove="StepDefinations\**" />
+    <SpecFlowFeatureFiles Remove="FeatureFiles\**" />
+    <SpecFlowFeatureFiles Remove="Hooks\**" />
+    <SpecFlowFeatureFiles Remove="StepDefinations\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="FeatureFiles\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Hooks\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="StepDefinations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.0" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="Selenium.Chrome.WebDriver" Version="83.0.0" />
+    <PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="84.0.4147.3001" />
+    <PackageReference Include="SpecFlow" Version="3.3.74" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.3.74" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.3.74" />
+  </ItemGroup>
+
+</Project>
